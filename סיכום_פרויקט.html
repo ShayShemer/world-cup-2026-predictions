@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<title>פרויקט הגמר — שי שמר</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff;
+    color: #1a1a2e;
+    direction: rtl;
+    padding: 48px 60px;
+    max-width: 860px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .page-header {
+    background: linear-gradient(135deg, #1a2a1a, #0d2b0d);
+    color: #fff;
+    padding: 28px 36px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+    border-right: 6px solid #4ade80;
+  }
+  .page-header h1 { font-size: 22px; color: #4ade80; margin-bottom: 6px; }
+  .page-header .meta { font-size: 13px; color: #9ca3af; }
+  .page-header .meta span { margin-left: 24px; }
+  .page-header .meta strong { color: #e8eaf0; }
+  h2 {
+    font-size: 15px;
+    font-weight: 800;
+    color: #0d2b0d;
+    background: #f0fdf4;
+    border-right: 4px solid #4ade80;
+    padding: 7px 14px;
+    border-radius: 0 8px 8px 0;
+    margin: 28px 0 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  p { margin-bottom: 10px; }
+  .run-box {
+    background: #0d1117;
+    border: 1px solid #2d6a2d;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .run-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .run-step:last-child { margin-bottom: 0; }
+  .step-num {
+    background: #2d6a2d;
+    color: #fff;
+    font-weight: 800;
+    font-size: 12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .step-text { color: #e8eaf0; font-size: 13px; }
+  code {
+    background: #1f2937;
+    color: #4ade80;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-family: 'Consolas', monospace;
+    font-size: 12px;
+    direction: ltr;
+    display: inline-block;
+  }
+  .ready-msg {
+    background: #14532d;
+    color: #4ade80;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-family: 'Consolas', monospace;
+    font-size: 12px;
+    direction: ltr;
+    margin-top: 10px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+  th {
+    background: #14532d;
+    color: #4ade80;
+    padding: 9px 14px;
+    text-align: right;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  td {
+    padding: 9px 14px;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: #f9fafb; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .badge-py  { background: #eff6ff; color: #1d4ed8; }
+  .badge-js  { background: #fefce8; color: #854d0e; }
+  .badge-ng  { background: #f0fdf4; color: #15803d; }
+  .badge-pg  { background: #fdf4ff; color: #7e22ce; }
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .feature-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px 16px;
+    border-right: 3px solid #4ade80;
+  }
+  .feature-card h3 { font-size: 13px; color: #14532d; margin-bottom: 4px; }
+  .feature-card p  { font-size: 12px; color: #4b5563; margin: 0; }
+  .eng-points { display: flex; flex-direction: column; gap: 8px; }
+  .eng-point {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 9px 14px;
+  }
+  .eng-icon { font-size: 16px; flex-shrink: 0; }
+  .eng-text { font-size: 13px; }
+  .eng-text strong { color: #15803d; }
+  .footer {
+    margin-top: 36px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 12px;
+    color: #9ca3af;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media print {
+    body { padding: 32px 40px; }
+    .page-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    table th { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    h2 { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .run-box { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .ready-msg { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .feature-card { break-inside: avoid; }
+    .eng-point { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .step-num { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>🏆 World Cup 2026 Predictions App</h1>
+  <div class="meta">
+    <span><strong>מגיש:</strong> שי שמר</span>
+    <span><strong>קורס:</strong> הנדסת פתרונות תוכנה מתקדמים חלק א</span>
+    <span><strong>תאריך:</strong> יולי 2026</span>
+  </div>
+</div>
+
+<h2>תיאור הפרויקט</h2>
+<p>
+  אפליקציית ניחושים למונדיאל 2026 המאפשרת למשתמשים לנחש תוצאות משחקים ולהשוות את ניחושיהם להמלצות מנוע AI סטטיסטי.
+  המערכת מושכת נתונים חיים מ-ESPN API כל 60 שניות ומתעדכנת אוטומטית לאורך כל הטורניר — החל מ-Round of 32 ועד לגמר.
+  ניחושי AI מוצגים מול התוצאה בפועל, צבועים ירוק (צדק) או אדום (טעה).
+</p>
+
+<h2>קבלת הקבצים</h2>
+<p>
+  מקבלים מהמגיש קובץ <strong>World Cup Project.zip</strong> ומחלצים אותו לתיקייה לבחירתכם (לדוגמה <code>G:\World Cup Project</code>).
+  את נתיב התיקייה יש לשים ב-Command Prompt בפקודה שבשלב 2 למטה.
+</p>
+
+<h2>הרצת הפרויקט</h2>
+<div class="run-box">
+  <div class="run-step">
+    <div class="step-num">1</div>
+    <div class="step-text">פותחים <strong style="color:#4ade80">Docker Desktop</strong> ומחכים לסימן הירוק בתחתית</div>
+  </div>
+  <div class="run-step">
+    <div class="step-num">2</div>
+    <div class="step-text">פותחים Command Prompt ומריצים:
+      <br/><br/>
+      <code>cd /d "G:\World Cup Project"</code>
+      <br/>
+      <code>docker compose up --build</code>
+    </div>
+  </div>
+  <div class="run-step">
+    <div class="step-num">3</div>
+    <div class="step-text">
+      מחכים לשורה:
+      <div class="ready-msg">✅  ALL SYSTEMS READY — Open http://localhost:8080</div>
+    </div>
+  </div>
+  <div class="run-step">
+    <div class="step-num">4</div>
+    <div class="step-text">פותחים דפדפן בכתובת <strong style="color:#4ade80">http://localhost:8080</strong></div>
+  </div>
+</div>
+
+<h2>ארכיטקטורה — 4 מיקרוסרוויסים</h2>
+<table>
+  <thead>
+    <tr>
+      <th>שירות</th>
+      <th>טכנולוגיה</th>
+      <th>פורט</th>
+      <th>תפקיד</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>stats-service</strong></td>
+      <td><span class="badge badge-py">Python / FastAPI</span></td>
+      <td>8001</td>
+      <td>מנוע ניחוש <span dir="ltr">Poisson Distribution</span> עם 5 גורמים משוקללים</td>
+    </tr>
+    <tr>
+      <td><strong>api-service</strong></td>
+      <td><span class="badge badge-js">Node.js / Express</span></td>
+      <td>3001</td>
+      <td>ניהול משחקים, sync חי מ-ESPN, תוצאות</td>
+    </tr>
+    <tr>
+      <td><strong>frontend</strong></td>
+      <td><span class="badge badge-ng">Nginx + HTML/JS/CSS</span></td>
+      <td>8080</td>
+      <td>ממשק משתמש, reverse proxy ל-API</td>
+    </tr>
+    <tr>
+      <td><strong>db</strong></td>
+      <td><span class="badge badge-pg">PostgreSQL 16</span></td>
+      <td>פנימי</td>
+      <td>שמירת ניחושים ותוצאות, נתונים קבועים</td>
+    </tr>
+  </tbody>
+</table>
+<p style="font-size:12px;color:#6b7280;">כל השירותים רצים על רשת Docker פנימית (<code>app-network</code>). שמות השירותים משמשים כ-hostnames לתקשורת פנימית.</p>
+
+<h2>תכונות עיקריות</h2>
+<div class="features">
+  <div class="feature-card">
+    <h3>🤖 מנוע <span dir="ltr">AI</span> — <span dir="ltr">Poisson Distribution</span></h3>
+    <p><span dir="ltr">5</span> גורמים: היסטוריה (20%), פורמה (30%), עוצמה (25%), דירוג <span dir="ltr">FIFA</span> (15%), שחקנים חסרים (10%). כולל ניחוש הארכה ופנדלים.</p>
+  </div>
+  <div class="feature-card">
+    <h3>📡 עדכון חי אוטומטי</h3>
+    <p>ESPN API נסרק כל 60 שניות. תוצאות ושעון המשחק החי (דקה + תוצאה) ומשחקי שלבים מתקדמים נוספים אוטומטית.</p>
+  </div>
+  <div class="feature-card">
+    <h3>✅ <span dir="ltr">AI</span> מול מציאות</h3>
+    <p>בכל משחק שהסתיים מוצג ניחוש ה-<span dir="ltr">AI</span> מול התוצאה האמיתית, צבוע ירוק אם צדק ואדום אם טעה.</p>
+  </div>
+  <div class="feature-card">
+    <h3>📊 גרף הסתברויות</h3>
+    <p>פאנל AI מציג את 8 התוצאות הסבירות ביותר עם אחוזי הסתברות.</p>
+  </div>
+  <div class="feature-card">
+    <h3>🎯 פאנל תוצאות</h3>
+    <p>תפריט צד שמציג את כל המשחקים לפי סיבוב, עם ניחוש AI מול תוצאה בפועל.</p>
+  </div>
+  <div class="feature-card">
+    <h3>🕐 שעון ישראל</h3>
+    <p>כל שעות המשחקים מוצגות בשעון ישראל (IL). במשחק חי מוצג: דקה + תוצאה עדכנית.</p>
+  </div>
+</div>
+
+<h2>נקודות הנדסיות</h2>
+<div class="eng-points">
+  <div class="eng-point">
+    <div class="eng-icon">🔗</div>
+    <div class="eng-text"><strong>depends_on + healthcheck</strong> — סדר עלייה מובטח: DB מוכן לפני api-service, stats-service מוכן לפני שליחת בקשות ניחוש.</div>
+  </div>
+  <div class="eng-point">
+    <div class="eng-icon">💾</div>
+    <div class="eng-text"><strong>pgdata volume</strong> — נתוני המשתמשים שורדים <code>docker compose down</code> ולא נמחקים בין הפעלות.</div>
+  </div>
+  <div class="eng-point">
+    <div class="eng-icon">🔄</div>
+    <div class="eng-text"><strong>ON CONFLICT DO UPDATE</strong> — upsert בטוח בלי כפילויות, גם כאשר ESPN שולח אותם נתונים שוב ושוב.</div>
+  </div>
+  <div class="eng-point">
+    <div class="eng-icon">🔇</div>
+    <div class="eng-text"><strong>healthcheck log filter</strong> — בקשות <code>/health</code> מסוננות מהלוגים, הטרמינל נשאר קריא להצגה.</div>
+  </div>
+</div>
+
+<div class="footer">
+  <span>שי שמר | הנדסת פתרונות תוכנה מתקדמים חלק א | יולי 2026</span>
+  <span>World Cup 2026 Predictions App</span>
+</div>
+
+</body>
+</html>

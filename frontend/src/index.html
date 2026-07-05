@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Cup 2026 Predictions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Side Results Panel -->
+  <div id="results-panel" class="results-panel">
+    <div class="panel-header">
+      <span>⚽ Round of 32 — Results</span>
+      <button class="panel-close" onclick="togglePanel()">✕</button>
+    </div>
+    <div id="panel-content"><p class="loading" style="font-size:0.8rem">Loading...</p></div>
+  </div>
+
+  <!-- Floating toggle button -->
+  <button id="panel-toggle-btn" class="panel-toggle-btn" onclick="togglePanel()">
+    📊 Results
+  </button>
+
+  <header>
+    <div class="header-inner">
+      <span class="trophy">🏆</span>
+      <div>
+        <h1>World Cup 2026</h1>
+        <p class="subtitle">Round of 32 — Predict the results. See what history says.</p>
+      </div>
+      <span class="trophy">🏆</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="username-section">
+      <label for="username">Your name:</label>
+      <input type="text" id="username" placeholder="Enter your name..." maxlength="30" />
+    </section>
+
+    <section id="fixtures-container">
+      <p class="loading">Loading fixtures...</p>
+    </section>
+
+    <div class="bottom-grid">
+      <section class="all-predictions">
+        <h2>All Predictions</h2>
+        <div id="predictions-table"><p class="empty">No predictions yet.</p></div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{
+  "teams": [
+    "Brazil", "Germany", "Argentina", "France", "Spain",
+    "England", "Italy", "Portugal", "Netherlands", "Croatia",
+    "Uruguay", "Belgium", "Mexico", "Japan", "Senegal"
+  ],
+  "matches": [
+    { "team1": "Brazil",      "team2": "Germany",     "score1": 1, "score2": 7, "year": 2014, "competition": "World Cup Semi-final" },
+    { "team1": "Germany",     "team2": "Brazil",      "score1": 1, "score2": 0, "year": 2002, "competition": "World Cup Final" },
+    { "team1": "Brazil",      "team2": "Germany",     "score1": 2, "score2": 0, "year": 1970, "competition": "World Cup Semi-final" },
+    { "team1": "Brazil",      "team2": "Germany",     "score1": 0, "score2": 0, "year": 1966, "competition": "World Cup Group" },
+    { "team1": "Brazil",      "team2": "Germany",     "score1": 3, "score2": 2, "year": 1958, "competition": "World Cup Semi-final" },
+
+    { "team1": "Argentina",   "team2": "Brazil",      "score1": 2, "score2": 2, "year": 2023, "competition": "Friendly" },
+    { "team1": "Brazil",      "team2": "Argentina",   "score1": 0, "score2": 1, "year": 2021, "competition": "Copa America Final" },
+    { "team1": "Argentina",   "team2": "Brazil",      "score1": 0, "score2": 3, "year": 2019, "competition": "Copa America Semi-final" },
+    { "team1": "Brazil",      "team2": "Argentina",   "score1": 4, "score2": 0, "year": 2012, "competition": "Friendly" },
+    { "team1": "Argentina",   "team2": "Brazil",      "score1": 1, "score2": 0, "year": 2010, "competition": "Friendly" },
+
+    { "team1": "France",      "team2": "Germany",     "score1": 2, "score2": 0, "year": 2014, "competition": "World Cup Quarter-final" },
+    { "team1": "Germany",     "team2": "France",      "score1": 1, "score2": 0, "year": 2021, "competition": "Euro Group" },
+    { "team1": "France",      "team2": "Germany",     "score1": 0, "score2": 2, "year": 1982, "competition": "World Cup Semi-final" },
+    { "team1": "Germany",     "team2": "France",      "score1": 0, "score2": 1, "year": 2006, "competition": "World Cup Semi-final" },
+
+    { "team1": "Argentina",   "team2": "France",      "score1": 3, "score2": 3, "year": 2022, "competition": "World Cup Final" },
+    { "team1": "France",      "team2": "Argentina",   "score1": 4, "score2": 3, "year": 2018, "competition": "World Cup Round of 16" },
+    { "team1": "France",      "team2": "Argentina",   "score1": 3, "score2": 2, "year": 2022, "competition": "World Cup Final (AET)" },
+    { "team1": "Argentina",   "team2": "France",      "score1": 1, "score2": 0, "year": 2014, "competition": "World Cup Final" },
+
+    { "team1": "Spain",       "team2": "Germany",     "score1": 6, "score2": 0, "year": 2024, "competition": "Euro Quarter-final" },
+    { "team1": "Germany",     "team2": "Spain",       "score1": 0, "score2": 1, "year": 2010, "competition": "World Cup Semi-final" },
+    { "team1": "Spain",       "team2": "Germany",     "score1": 1, "score2": 0, "year": 2008, "competition": "Euro Final" },
+    { "team1": "Germany",     "team2": "Spain",       "score1": 2, "score2": 1, "year": 1966, "competition": "World Cup Group" },
+
+    { "team1": "England",     "team2": "Germany",     "score1": 4, "score2": 2, "year": 1966, "competition": "World Cup Final" },
+    { "team1": "Germany",     "team2": "England",     "score1": 1, "score2": 0, "year": 1990, "competition": "World Cup Semi-final" },
+    { "team1": "Germany",     "team2": "England",     "score1": 4, "score2": 1, "year": 2010, "competition": "World Cup Round of 16" },
+    { "team1": "England",     "team2": "Germany",     "score1": 2, "score2": 0, "year": 2021, "competition": "Euro Round of 16" },
+
+    { "team1": "Italy",       "team2": "France",      "score1": 1, "score2": 1, "year": 2006, "competition": "World Cup Final" },
+    { "team1": "France",      "team2": "Italy",       "score1": 3, "score2": 1, "year": 2006, "competition": "World Cup Final (AET)" },
+    { "team1": "Italy",       "team2": "France",      "score1": 2, "score2": 3, "year": 2022, "competition": "Nations League Final" },
+
+    { "team1": "Portugal",    "team2": "Spain",       "score1": 3, "score2": 3, "year": 2018, "competition": "World Cup Group" },
+    { "team1": "Spain",       "team2": "Portugal",    "score1": 1, "score2": 0, "year": 2010, "competition": "World Cup Round of 16" },
+    { "team1": "Portugal",    "team2": "Spain",       "score1": 1, "score2": 0, "year": 2004, "competition": "Euro Group" },
+
+    { "team1": "Netherlands", "team2": "Argentina",   "score1": 2, "score2": 4, "year": 2022, "competition": "World Cup Quarter-final" },
+    { "team1": "Argentina",   "team2": "Netherlands", "score1": 0, "score2": 0, "year": 2014, "competition": "World Cup Semi-final" },
+    { "team1": "Netherlands", "team2": "Argentina",   "score1": 1, "score2": 1, "year": 1998, "competition": "World Cup Quarter-final" },
+
+    { "team1": "Croatia",     "team2": "Brazil",      "score1": 1, "score2": 1, "year": 2022, "competition": "World Cup Quarter-final" },
+    { "team1": "Brazil",      "team2": "Croatia",     "score1": 3, "score2": 0, "year": 2014, "competition": "World Cup Group" },
+
+    { "team1": "France",      "team2": "Croatia",     "score1": 4, "score2": 2, "year": 2018, "competition": "World Cup Final" },
+    { "team1": "Croatia",     "team2": "France",      "score1": 1, "score2": 2, "year": 2022, "competition": "World Cup Semi-final" },
+
+    { "team1": "Uruguay",     "team2": "Brazil",      "score1": 2, "score2": 1, "year": 1950, "competition": "World Cup Final Group" },
+    { "team1": "Brazil",      "team2": "Uruguay",     "score1": 2, "score2": 1, "year": 1970, "competition": "World Cup Semi-final" },
+
+    { "team1": "Belgium",     "team2": "Brazil",      "score1": 2, "score2": 1, "year": 2018, "competition": "World Cup Quarter-final" },
+    { "team1": "Brazil",      "team2": "Belgium",     "score1": 4, "score2": 0, "year": 2002, "competition": "World Cup Quarter-final" },
+
+    { "team1": "Japan",       "team2": "Germany",     "score1": 2, "score2": 1, "year": 2022, "competition": "World Cup Group" },
+    { "team1": "Senegal",     "team2": "France",      "score1": 1, "score2": 0, "year": 2002, "competition": "World Cup Group" }
+  ]
+}

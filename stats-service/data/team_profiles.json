@@ -1,0 +1,564 @@
+{
+  "teams": {
+    "Brazil": {
+      "fifa_ranking": 5,
+      "attack_rating": 8.1,
+      "defense_rating": 7.6,
+      "avg_goals_scored": 2.1,
+      "avg_goals_conceded": 0.9,
+      "recent_form": ["W", "W", "D", "W", "W"],
+      "style": "attacking",
+      "key_players": [
+        { "name": "Vinicius Jr",  "position": "FW", "impact": 9.2 },
+        { "name": "Rodrygo",      "position": "FW", "impact": 8.0 },
+        { "name": "Casemiro",     "position": "MF", "impact": 8.4 },
+        { "name": "Alisson",      "position": "GK", "impact": 8.8 },
+        { "name": "Marquinhos",   "position": "DF", "impact": 8.2 }
+      ]
+    },
+    "Germany": {
+      "fifa_ranking": 16,
+      "attack_rating": 7.4,
+      "defense_rating": 7.2,
+      "avg_goals_scored": 1.8,
+      "avg_goals_conceded": 1.2,
+      "recent_form": ["W", "L", "W", "W", "D"],
+      "style": "balanced",
+      "key_players": [
+        { "name": "Florian Wirtz",    "position": "MF", "impact": 9.0 },
+        { "name": "Jamal Musiala",    "position": "MF", "impact": 8.8 },
+        { "name": "Kai Havertz",      "position": "FW", "impact": 8.2 },
+        { "name": "Manuel Neuer",     "position": "GK", "impact": 8.5 },
+        { "name": "Joshua Kimmich",   "position": "MF", "impact": 8.6 }
+      ]
+    },
+    "Argentina": {
+      "fifa_ranking": 1,
+      "attack_rating": 9.0,
+      "defense_rating": 8.2,
+      "avg_goals_scored": 2.4,
+      "avg_goals_conceded": 0.7,
+      "recent_form": ["W", "W", "W", "D", "W"],
+      "style": "balanced",
+      "key_players": [
+        { "name": "Lionel Messi",     "position": "FW", "impact": 9.8 },
+        { "name": "Julian Alvarez",   "position": "FW", "impact": 8.5 },
+        { "name": "Rodrigo De Paul",  "position": "MF", "impact": 8.0 },
+        { "name": "Emi Martinez",     "position": "GK", "impact": 9.0 },
+        { "name": "Lisandro Martinez","position": "DF", "impact": 8.3 }
+      ]
+    },
+    "France": {
+      "fifa_ranking": 2,
+      "attack_rating": 8.8,
+      "defense_rating": 8.0,
+      "avg_goals_scored": 2.2,
+      "avg_goals_conceded": 0.9,
+      "recent_form": ["W", "D", "W", "W", "W"],
+      "style": "attacking",
+      "key_players": [
+        { "name": "Kylian Mbappe",    "position": "FW", "impact": 9.6 },
+        { "name": "Antoine Griezmann","position": "FW", "impact": 8.6 },
+        { "name": "Aurelien Tchouameni","position":"MF","impact": 8.1 },
+        { "name": "Mike Maignan",     "position": "GK", "impact": 8.4 },
+        { "name": "William Saliba",   "position": "DF", "impact": 8.5 }
+      ]
+    },
+    "Spain": {
+      "fifa_ranking": 8,
+      "attack_rating": 8.3,
+      "defense_rating": 8.1,
+      "avg_goals_scored": 2.0,
+      "avg_goals_conceded": 0.8,
+      "recent_form": ["W", "W", "W", "D", "W"],
+      "style": "possession",
+      "key_players": [
+        { "name": "Lamine Yamal",     "position": "FW", "impact": 9.1 },
+        { "name": "Pedri",            "position": "MF", "impact": 8.7 },
+        { "name": "Rodri",            "position": "MF", "impact": 9.0 },
+        { "name": "Unai Simon",       "position": "GK", "impact": 8.0 },
+        { "name": "Dani Carvajal",    "position": "DF", "impact": 8.2 }
+      ]
+    },
+    "England": {
+      "fifa_ranking": 3,
+      "attack_rating": 8.0,
+      "defense_rating": 7.9,
+      "avg_goals_scored": 1.9,
+      "avg_goals_conceded": 0.9,
+      "recent_form": ["W", "D", "W", "D", "W"],
+      "style": "balanced",
+      "key_players": [
+        { "name": "Jude Bellingham",  "position": "MF", "impact": 9.3 },
+        { "name": "Harry Kane",       "position": "FW", "impact": 9.0 },
+        { "name": "Phil Foden",       "position": "MF", "impact": 8.5 },
+        { "name": "Jordan Pickford",  "position": "GK", "impact": 8.0 },
+        { "name": "John Stones",      "position": "DF", "impact": 8.1 }
+      ]
+    },
+    "Portugal": {
+      "fifa_ranking": 6,
+      "attack_rating": 8.2,
+      "defense_rating": 7.7,
+      "avg_goals_scored": 2.1,
+      "avg_goals_conceded": 1.0,
+      "recent_form": ["W", "W", "W", "W", "D"],
+      "style": "attacking",
+      "key_players": [
+        { "name": "Cristiano Ronaldo","position": "FW", "impact": 8.8 },
+        { "name": "Bruno Fernandes",  "position": "MF", "impact": 8.9 },
+        { "name": "Bernardo Silva",   "position": "MF", "impact": 8.6 },
+        { "name": "Ruben Dias",       "position": "DF", "impact": 8.7 },
+        { "name": "Diogo Costa",      "position": "GK", "impact": 8.3 }
+      ]
+    },
+    "Netherlands": {
+      "fifa_ranking": 7,
+      "attack_rating": 7.8,
+      "defense_rating": 7.6,
+      "avg_goals_scored": 1.9,
+      "avg_goals_conceded": 1.1,
+      "recent_form": ["W", "L", "W", "W", "W"],
+      "style": "balanced",
+      "key_players": [
+        { "name": "Virgil van Dijk",  "position": "DF", "impact": 9.0 },
+        { "name": "Cody Gakpo",       "position": "FW", "impact": 8.3 },
+        { "name": "Xavi Simons",      "position": "MF", "impact": 8.5 },
+        { "name": "Bart Verbruggen",  "position": "GK", "impact": 7.9 },
+        { "name": "Frenkie de Jong",  "position": "MF", "impact": 8.6 }
+      ]
+    },
+    "Croatia": {
+      "fifa_ranking": 9,
+      "attack_rating": 7.2,
+      "defense_rating": 7.8,
+      "avg_goals_scored": 1.6,
+      "avg_goals_conceded": 1.0,
+      "recent_form": ["D", "W", "L", "W", "D"],
+      "style": "defensive",
+      "key_players": [
+        { "name": "Luka Modric",      "position": "MF", "impact": 9.1 },
+        { "name": "Ivan Perisic",     "position": "FW", "impact": 8.0 },
+        { "name": "Mateo Kovacic",    "position": "MF", "impact": 8.4 },
+        { "name": "Dominik Livakovic","position": "GK", "impact": 8.5 },
+        { "name": "Josko Gvardiol",   "position": "DF", "impact": 8.6 }
+      ]
+    },
+    "Belgium": {
+      "fifa_ranking": 4,
+      "attack_rating": 7.6,
+      "defense_rating": 7.3,
+      "avg_goals_scored": 1.8,
+      "avg_goals_conceded": 1.1,
+      "recent_form": ["L", "W", "D", "W", "W"],
+      "style": "attacking",
+      "key_players": [
+        { "name": "Kevin De Bruyne",  "position": "MF", "impact": 9.4 },
+        { "name": "Romelu Lukaku",    "position": "FW", "impact": 8.5 },
+        { "name": "Thibaut Courtois", "position": "GK", "impact": 9.1 },
+        { "name": "Axel Witsel",      "position": "MF", "impact": 7.8 },
+        { "name": "Toby Alderweireld","position": "DF", "impact": 7.9 }
+      ]
+    },
+    "Italy": {
+      "fifa_ranking": 10,
+      "attack_rating": 7.3,
+      "defense_rating": 8.0,
+      "avg_goals_scored": 1.6,
+      "avg_goals_conceded": 0.9,
+      "recent_form": ["W", "D", "W", "L", "D"],
+      "style": "defensive",
+      "key_players": [
+        { "name": "Federico Chiesa",  "position": "FW", "impact": 8.3 },
+        { "name": "Nicolo Barella",   "position": "MF", "impact": 8.7 },
+        { "name": "Gianluigi Donnarumma","position":"GK","impact": 8.9 },
+        { "name": "Alessandro Bastoni","position": "DF","impact": 8.5 },
+        { "name": "Lorenzo Pellegrini","position": "MF","impact": 7.8 }
+      ]
+    },
+    "Uruguay": {
+      "fifa_ranking": 14,
+      "attack_rating": 7.0,
+      "defense_rating": 7.5,
+      "avg_goals_scored": 1.5,
+      "avg_goals_conceded": 1.1,
+      "recent_form": ["W", "D", "W", "D", "L"],
+      "style": "defensive",
+      "key_players": [
+        { "name": "Darwin Nunez",     "position": "FW", "impact": 8.7 },
+        { "name": "Federico Valverde","position": "MF", "impact": 8.8 },
+        { "name": "Luis Suarez",      "position": "FW", "impact": 7.5 },
+        { "name": "Jose Gimenez",     "position": "DF", "impact": 8.0 },
+        { "name": "Fernando Muslera", "position": "GK", "impact": 7.6 }
+      ]
+    },
+    "Mexico": {
+      "fifa_ranking": 15,
+      "attack_rating": 6.8,
+      "defense_rating": 7.0,
+      "avg_goals_scored": 1.4,
+      "avg_goals_conceded": 1.2,
+      "recent_form": ["D", "W", "L", "W", "D"],
+      "style": "balanced",
+      "key_players": [
+        { "name": "Hirving Lozano",   "position": "FW", "impact": 8.2 },
+        { "name": "Guillermo Ochoa",  "position": "GK", "impact": 8.0 },
+        { "name": "Edson Alvarez",    "position": "MF", "impact": 8.3 },
+        { "name": "Raul Jimenez",     "position": "FW", "impact": 7.9 },
+        { "name": "Andres Guardado",  "position": "MF", "impact": 7.4 }
+      ]
+    },
+    "Japan": {
+      "fifa_ranking": 17,
+      "attack_rating": 7.0,
+      "defense_rating": 7.3,
+      "avg_goals_scored": 1.6,
+      "avg_goals_conceded": 1.0,
+      "recent_form": ["W", "W", "D", "W", "L"],
+      "style": "pressing",
+      "key_players": [
+        { "name": "Takefusa Kubo",    "position": "FW", "impact": 8.4 },
+        { "name": "Kaoru Mitoma",     "position": "FW", "impact": 8.5 },
+        { "name": "Wataru Endo",      "position": "MF", "impact": 8.1 },
+        { "name": "Shuichi Gonda",    "position": "GK", "impact": 7.7 },
+        { "name": "Maya Yoshida",     "position": "DF", "impact": 7.8 }
+      ]
+    },
+    "Senegal": {
+      "fifa_ranking": 18,
+      "attack_rating": 7.1,
+      "defense_rating": 7.1,
+      "avg_goals_scored": 1.5,
+      "avg_goals_conceded": 1.1,
+      "recent_form": ["W", "D", "W", "W", "D"],
+      "style": "balanced",
+      "key_players": [
+        { "name": "Sadio Mane",       "position": "FW", "impact": 9.0 },
+        { "name": "Edouard Mendy",    "position": "GK", "impact": 8.3 },
+        { "name": "Kalidou Koulibaly","position": "DF", "impact": 8.5 },
+        { "name": "Idrissa Gueye",    "position": "MF", "impact": 7.9 },
+        { "name": "Ismaila Sarr",     "position": "FW", "impact": 8.0 }
+      ]
+    },
+    "Canada": {
+      "fifa_ranking": 20,
+      "attack_rating": 6.9,
+      "defense_rating": 7.2,
+      "avg_goals_scored": 1.5,
+      "avg_goals_conceded": 1.1,
+      "recent_form": ["W", "W", "D", "W", "L"],
+      "style": "pressing",
+      "key_players": [
+        { "name": "Alphonso Davies",  "position": "DF", "impact": 9.0 },
+        { "name": "Jonathan David",   "position": "FW", "impact": 8.7 },
+        { "name": "Tajon Buchanan",   "position": "FW", "impact": 7.9 },
+        { "name": "Milan Borjan",     "position": "GK", "impact": 7.8 },
+        { "name": "Stephen Eustaquio","position": "MF", "impact": 8.0 }
+      ]
+    },
+    "South Africa": {
+      "fifa_ranking": 55,
+      "attack_rating": 5.8,
+      "defense_rating": 6.0,
+      "avg_goals_scored": 1.1,
+      "avg_goals_conceded": 1.4,
+      "recent_form": ["L", "W", "D", "L", "W"],
+      "style": "balanced",
+      "key_players": [
+        { "name": "Percy Tau",        "position": "FW", "impact": 7.8 },
+        { "name": "Ronwen Williams",  "position": "GK", "impact": 7.5 },
+        { "name": "Themba Zwane",     "position": "MF", "impact": 7.4 },
+        { "name": "Siyanda Xulu",     "position": "DF", "impact": 7.0 },
+        { "name": "Lyle Foster",      "position": "FW", "impact": 7.6 }
+      ]
+    },
+    "Japan": {
+      "fifa_ranking": 17,
+      "attack_rating": 7.0,
+      "defense_rating": 7.3,
+      "avg_goals_scored": 1.6,
+      "avg_goals_conceded": 1.0,
+      "recent_form": ["W", "W", "D", "W", "L"],
+      "style": "pressing",
+      "key_players": [
+        { "name": "Takefusa Kubo",    "position": "FW", "impact": 8.4 },
+        { "name": "Kaoru Mitoma",     "position": "FW", "impact": 8.5 },
+        { "name": "Wataru Endo",      "position": "MF", "impact": 8.1 },
+        { "name": "Shuichi Gonda",    "position": "GK", "impact": 7.7 },
+        { "name": "Maya Yoshida",     "position": "DF", "impact": 7.8 }
+      ]
+    },
+    "Paraguay": {
+      "fifa_ranking": 52,
+      "attack_rating": 6.0,
+      "defense_rating": 6.5,
+      "avg_goals_scored": 1.2,
+      "avg_goals_conceded": 1.3,
+      "recent_form": ["D", "W", "L", "W", "D"],
+      "style": "defensive",
+      "key_players": [
+        { "name": "Miguel Almiron",   "position": "MF", "impact": 8.3 },
+        { "name": "Julio Enciso",     "position": "FW", "impact": 8.0 },
+        { "name": "Antonio Sanabria", "position": "FW", "impact": 7.6 },
+        { "name": "Omar Alderete",    "position": "DF", "impact": 7.4 },
+        { "name": "Antony Silva",     "position": "GK", "impact": 7.3 }
+      ]
+    },
+    "Morocco": {
+      "fifa_ranking": 14,
+      "attack_rating": 7.2,
+      "defense_rating": 8.0,
+      "avg_goals_scored": 1.4,
+      "avg_goals_conceded": 0.7,
+      "recent_form": ["W", "W", "D", "W", "W"],
+      "style": "defensive",
+      "key_players": [
+        { "name": "Achraf Hakimi",    "position": "DF", "impact": 9.1 },
+        { "name": "Hakim Ziyech",     "position": "MF", "impact": 8.3 },
+        { "name": "Youssef En-Nesyri","position": "FW", "impact": 8.2 },
+        { "name": "Yassine Bounou",   "position": "GK", "impact": 8.7 },
+        { "name": "Romain Saiss",     "position": "DF", "impact": 8.0 }
+      ]
+    },
+    "Ivory Coast": {
+      "fifa_ranking": 22,
+      "attack_rating": 7.3,
+      "defense_rating": 6.9,
+      "avg_goals_scored": 1.7,
+      "avg_goals_conceded": 1.2,
+      "recent_form": ["W", "W", "D", "W", "L"],
+      "style": "attacking",
+      "key_players": [
+        { "name": "Sebastien Haller", "position": "FW", "impact": 8.2 },
+        { "name": "Nicolas Pepe",     "position": "FW", "impact": 7.9 },
+        { "name": "Franck Kessie",    "position": "MF", "impact": 8.4 },
+        { "name": "Serge Aurier",     "position": "DF", "impact": 7.5 },
+        { "name": "Badra Sangare",    "position": "GK", "impact": 7.4 }
+      ]
+    },
+    "Norway": {
+      "fifa_ranking": 26,
+      "attack_rating": 7.5,
+      "defense_rating": 7.0,
+      "avg_goals_scored": 1.8,
+      "avg_goals_conceded": 1.1,
+      "recent_form": ["W", "D", "W", "W", "D"],
+      "style": "attacking",
+      "key_players": [
+        { "name": "Erling Haaland",   "position": "FW", "impact": 9.7 },
+        { "name": "Martin Odegaard",  "position": "MF", "impact": 9.2 },
+        { "name": "Alexander Sorloth","position": "FW", "impact": 8.0 },
+        { "name": "Orjan Nyland",     "position": "GK", "impact": 7.6 },
+        { "name": "Leo Ostigard",     "position": "DF", "impact": 7.7 }
+      ]
+    },
+    "Sweden": {
+      "fifa_ranking": 25,
+      "attack_rating": 6.9,
+      "defense_rating": 7.2,
+      "avg_goals_scored": 1.5,
+      "avg_goals_conceded": 1.0,
+      "recent_form": ["W", "D", "W", "L", "W"],
+      "style": "balanced",
+      "key_players": [
+        { "name": "Victor Lindelof",  "position": "DF", "impact": 8.0 },
+        { "name": "Dejan Kulusevski", "position": "MF", "impact": 8.5 },
+        { "name": "Alexander Isak",   "position": "FW", "impact": 8.8 },
+        { "name": "Robin Olsen",      "position": "GK", "impact": 7.5 },
+        { "name": "Emil Forsberg",    "position": "MF", "impact": 8.0 }
+      ]
+    },
+    "Ecuador": {
+      "fifa_ranking": 35,
+      "attack_rating": 6.5,
+      "defense_rating": 6.8,
+      "avg_goals_scored": 1.3,
+      "avg_goals_conceded": 1.2,
+      "recent_form": ["D", "W", "W", "L", "D"],
+      "style": "balanced",
+      "key_players": [
+        { "name": "Enner Valencia",   "position": "FW", "impact": 8.0 },
+        { "name": "Moises Caicedo",   "position": "MF", "impact": 8.7 },
+        { "name": "Gonzalo Plata",    "position": "FW", "impact": 7.8 },
+        { "name": "Alexander Dominguez","position":"GK","impact": 7.3 },
+        { "name": "Piero Hincapie",   "position": "DF", "impact": 7.9 }
+      ]
+    },
+    "DR Congo": {
+      "fifa_ranking": 45,
+      "attack_rating": 6.2,
+      "defense_rating": 6.5,
+      "avg_goals_scored": 1.2,
+      "avg_goals_conceded": 1.3,
+      "recent_form": ["W", "D", "W", "L", "W"],
+      "style": "attacking",
+      "key_players": [
+        { "name": "Cedric Bakambu",   "position": "FW", "impact": 7.8 },
+        { "name": "Yannick Bolasie",  "position": "FW", "impact": 7.6 },
+        { "name": "Chancel Mbemba",   "position": "DF", "impact": 7.7 },
+        { "name": "Elia Meschack",    "position": "MF", "impact": 7.5 },
+        { "name": "Joel Kiassumbua",  "position": "GK", "impact": 7.2 }
+      ]
+    },
+    "Bosnia & Herzegovina": {
+      "fifa_ranking": 50,
+      "attack_rating": 6.3,
+      "defense_rating": 6.4,
+      "avg_goals_scored": 1.3,
+      "avg_goals_conceded": 1.4,
+      "recent_form": ["W", "D", "L", "W", "W"],
+      "style": "balanced",
+      "key_players": [
+        { "name": "Edin Dzeko",       "position": "FW", "impact": 8.2 },
+        { "name": "Miralem Pjanic",   "position": "MF", "impact": 8.0 },
+        { "name": "Sead Kolasinac",   "position": "DF", "impact": 7.6 },
+        { "name": "Ibrahim Sehic",    "position": "GK", "impact": 7.3 },
+        { "name": "Amer Gojak",       "position": "MF", "impact": 7.5 }
+      ]
+    },
+    "United States": {
+      "fifa_ranking": 13,
+      "attack_rating": 7.1,
+      "defense_rating": 7.0,
+      "avg_goals_scored": 1.6,
+      "avg_goals_conceded": 1.1,
+      "recent_form": ["W", "D", "W", "W", "L"],
+      "style": "pressing",
+      "key_players": [
+        { "name": "Christian Pulisic","position": "FW", "impact": 8.8 },
+        { "name": "Weston McKennie",  "position": "MF", "impact": 8.1 },
+        { "name": "Tyler Adams",      "position": "MF", "impact": 8.2 },
+        { "name": "Matt Turner",      "position": "GK", "impact": 7.8 },
+        { "name": "Sergiño Dest",     "position": "DF", "impact": 7.7 }
+      ]
+    },
+    "Austria": {
+      "fifa_ranking": 28,
+      "attack_rating": 7.0,
+      "defense_rating": 7.1,
+      "avg_goals_scored": 1.6,
+      "avg_goals_conceded": 1.1,
+      "recent_form": ["W", "W", "D", "W", "D"],
+      "style": "pressing",
+      "key_players": [
+        { "name": "Marcel Sabitzer",  "position": "MF", "impact": 8.3 },
+        { "name": "David Alaba",      "position": "DF", "impact": 8.8 },
+        { "name": "Marko Arnautovic", "position": "FW", "impact": 8.0 },
+        { "name": "Patrick Pentz",    "position": "GK", "impact": 7.6 },
+        { "name": "Christoph Baumgartner","position":"MF","impact": 8.1 }
+      ]
+    },
+    "Switzerland": {
+      "fifa_ranking": 19,
+      "attack_rating": 7.2,
+      "defense_rating": 7.5,
+      "avg_goals_scored": 1.7,
+      "avg_goals_conceded": 0.9,
+      "recent_form": ["W", "D", "W", "W", "D"],
+      "style": "defensive",
+      "key_players": [
+        { "name": "Granit Xhaka",     "position": "MF", "impact": 8.6 },
+        { "name": "Xherdan Shaqiri",  "position": "MF", "impact": 8.0 },
+        { "name": "Haris Seferovic",  "position": "FW", "impact": 7.6 },
+        { "name": "Yann Sommer",      "position": "GK", "impact": 8.5 },
+        { "name": "Manuel Akanji",    "position": "DF", "impact": 8.4 }
+      ]
+    },
+    "Algeria": {
+      "fifa_ranking": 42,
+      "attack_rating": 6.6,
+      "defense_rating": 6.7,
+      "avg_goals_scored": 1.3,
+      "avg_goals_conceded": 1.2,
+      "recent_form": ["W", "W", "D", "L", "W"],
+      "style": "balanced",
+      "key_players": [
+        { "name": "Riyad Mahrez",     "position": "FW", "impact": 9.0 },
+        { "name": "Islam Slimani",    "position": "FW", "impact": 7.8 },
+        { "name": "Sofiane Feghouli", "position": "MF", "impact": 7.6 },
+        { "name": "Rais M'Bolhi",     "position": "GK", "impact": 7.5 },
+        { "name": "Aissa Mandi",      "position": "DF", "impact": 7.7 }
+      ]
+    },
+    "Australia": {
+      "fifa_ranking": 23,
+      "attack_rating": 6.8,
+      "defense_rating": 7.0,
+      "avg_goals_scored": 1.4,
+      "avg_goals_conceded": 1.1,
+      "recent_form": ["W", "D", "W", "W", "L"],
+      "style": "pressing",
+      "key_players": [
+        { "name": "Mat Ryan",         "position": "GK", "impact": 8.0 },
+        { "name": "Mathew Leckie",    "position": "FW", "impact": 7.9 },
+        { "name": "Aaron Mooy",       "position": "MF", "impact": 7.8 },
+        { "name": "Milos Degenek",    "position": "DF", "impact": 7.5 },
+        { "name": "Mitchell Duke",    "position": "FW", "impact": 7.6 }
+      ]
+    },
+    "Egypt": {
+      "fifa_ranking": 38,
+      "attack_rating": 6.5,
+      "defense_rating": 6.8,
+      "avg_goals_scored": 1.3,
+      "avg_goals_conceded": 1.2,
+      "recent_form": ["D", "W", "D", "W", "L"],
+      "style": "defensive",
+      "key_players": [
+        { "name": "Mohamed Salah",    "position": "FW", "impact": 9.5 },
+        { "name": "Mohamed El-Shenawy","position":"GK","impact": 7.8 },
+        { "name": "Ahmed Hegazi",     "position": "DF", "impact": 7.6 },
+        { "name": "Tarek Hamed",      "position": "MF", "impact": 7.4 },
+        { "name": "Omar Marmoush",    "position": "FW", "impact": 8.2 }
+      ]
+    },
+    "Cape Verde": {
+      "fifa_ranking": 62,
+      "attack_rating": 5.9,
+      "defense_rating": 6.3,
+      "avg_goals_scored": 1.1,
+      "avg_goals_conceded": 1.3,
+      "recent_form": ["W", "D", "W", "D", "L"],
+      "style": "balanced",
+      "key_players": [
+        { "name": "Ryan Mendes",      "position": "FW", "impact": 7.5 },
+        { "name": "Garry Rodrigues",  "position": "FW", "impact": 7.4 },
+        { "name": "Marco Soares",     "position": "MF", "impact": 7.2 },
+        { "name": "Vozinha",          "position": "GK", "impact": 7.3 },
+        { "name": "Dylan Tavares",    "position": "DF", "impact": 7.0 }
+      ]
+    },
+    "Colombia": {
+      "fifa_ranking": 12,
+      "attack_rating": 7.5,
+      "defense_rating": 7.2,
+      "avg_goals_scored": 1.8,
+      "avg_goals_conceded": 1.0,
+      "recent_form": ["W", "W", "D", "W", "W"],
+      "style": "attacking",
+      "key_players": [
+        { "name": "James Rodriguez",  "position": "MF", "impact": 8.8 },
+        { "name": "Luis Diaz",        "position": "FW", "impact": 9.0 },
+        { "name": "Radamel Falcao",   "position": "FW", "impact": 7.8 },
+        { "name": "David Ospina",     "position": "GK", "impact": 8.0 },
+        { "name": "Davinson Sanchez", "position": "DF", "impact": 8.1 }
+      ]
+    },
+    "Ghana": {
+      "fifa_ranking": 60,
+      "attack_rating": 6.1,
+      "defense_rating": 6.2,
+      "avg_goals_scored": 1.2,
+      "avg_goals_conceded": 1.4,
+      "recent_form": ["L", "W", "D", "W", "L"],
+      "style": "attacking",
+      "key_players": [
+        { "name": "Thomas Partey",    "position": "MF", "impact": 8.5 },
+        { "name": "Mohammed Kudus",   "position": "MF", "impact": 8.4 },
+        { "name": "Jordan Ayew",      "position": "FW", "impact": 7.7 },
+        { "name": "Lawrence Ati-Zigi","position": "GK", "impact": 7.4 },
+        { "name": "Daniel Amartey",   "position": "DF", "impact": 7.5 }
+      ]
+    }
+  }
+}

@@ -1,0 +1,89 @@
+###############################################################################
+# docker-compose.yml — World Cup Predictions
+#
+# This file defines 4 services and tells Docker how to connect them.
+# Run with:  docker compose up --build
+# Stop with: docker compose down
+###############################################################################
+
+services:
+
+  # ── Service 1: stats-service (Python / FastAPI) ───────────────────────────
+  # Responsible for: historical data, algorithms, predictions
+  stats-service:
+    build: ./stats-service        # Look for a Dockerfile in this folder
+    container_name: stats-service
+    ports:
+      - "8001:8001"               # host:container — lets you test it directly at localhost:8001
+    networks:
+      - app-network               # Must be on the same network to talk to other services
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8001/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # ── Service 4: db (PostgreSQL) ────────────────────────────────────────────
+  # Responsible for: persisting predictions and match results across restarts
+  db:
+    image: postgres:16-alpine     # Official lightweight Postgres image — no build step needed
+    container_name: db
+    environment:
+      POSTGRES_DB: worldcup       # Database name
+      POSTGRES_USER: wcuser       # Username
+      POSTGRES_PASSWORD: wcpass   # Password (api-service connects with these credentials)
+    volumes:
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql  # Runs on first start
+      - pgdata:/var/lib/postgresql/data                           # Persists data on disk
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U wcuser -d worldcup"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Service 2: api-service (Node.js / Express) ────────────────────────────
+  # Responsible for: fixtures, predictions storage, routing requests to stats-service
+  api-service:
+    build: ./api-service
+    container_name: api-service
+    ports:
+      - "3001:3001"               # Accessible at localhost:3001 for debugging
+    environment:
+      # These tell Node where to find the other services.
+      # Inside Docker, service names act as hostnames!
+      - STATS_SERVICE_URL=http://stats-service:8001
+      - DATABASE_URL=postgresql://wcuser:wcpass@db:5432/worldcup
+    networks:
+      - app-network
+    depends_on:
+      stats-service:
+        condition: service_healthy  # Wait for stats-service to be healthy before starting
+      db:
+        condition: service_healthy  # Wait for Postgres to be ready before starting
+
+  # ── Service 3: frontend (Nginx + HTML/CSS/JS) ─────────────────────────────
+  # Responsible for: serving the UI and proxying /api/* to api-service
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "8080:80"                 # Visit the app at http://localhost:8080
+    networks:
+      - app-network
+    depends_on:
+      - api-service               # Start after api-service is up
+
+# ── Shared network ────────────────────────────────────────────────────────────
+# All services on this network can reach each other by their service name.
+# Example: from inside api-service, "http://stats-service:8001" just works.
+networks:
+  app-network:
+    driver: bridge
+
+# ── Named volumes ─────────────────────────────────────────────────────────────
+# pgdata persists Postgres data between "docker compose down" / "up" cycles.
+# Without this, the database would be wiped every time you stop the project.
+volumes:
+  pgdata:
